@@ -13,7 +13,17 @@
 		</dd>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Data Nascimento'); ?></dt>
 		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
-			<?php echo $usuario['Usuario']['data_nascimento']; ?>
+			<?php echo $this->Formatacao->data($usuario['Usuario']['data_nascimento']); ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Data Nascimento'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $this->Formatacao->dataHora($usuario['Usuario']['data_nascimento']); ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Data Nascimento'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $this->Formatacao->dataCompleta(strtotime($usuario['Usuario']['data_nascimento'])); ?>
 			&nbsp;
 		</dd>
 	</dl>
