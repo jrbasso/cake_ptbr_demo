@@ -14,6 +14,8 @@ class PagamentosController extends AppController {
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->set('pagamento', $this->Pagamento->read(null, $id));
+
+		$this->helpers[] = 'CakePtbr.Formatacao';
 	}
 
 	function add() {

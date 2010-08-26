@@ -16,6 +16,26 @@
 			<?php echo $pagamento['Pagamento']['valor']; ?>
 			&nbsp;
 		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Valor (format)'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $this->Formatacao->precisao($pagamento['Pagamento']['valor']); ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Valor (porc)'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $this->Formatacao->porcentagem($pagamento['Pagamento']['valor']); ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Valor (moeda)'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $this->Formatacao->moeda($pagamento['Pagamento']['valor']); ?>
+			&nbsp;
+		</dd>
+		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Valor (ext)'); ?></dt>
+		<dd<?php if ($i++ % 2 == 0) echo $class;?>>
+			<?php echo $this->Formatacao->moedaPorExtenso($pagamento['Pagamento']['valor']); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">
