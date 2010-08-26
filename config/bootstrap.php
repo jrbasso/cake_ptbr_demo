@@ -50,3 +50,5 @@
  */
 
 // require APP . 'plugins' . DS . 'cake_ptbr' . DS . 'config' . DS . 'traducao_core.php';
+
+require APP . 'plugins' . DS . 'cake_ptbr' . DS . 'config' . DS . 'inflections.php';
