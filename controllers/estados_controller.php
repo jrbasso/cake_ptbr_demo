@@ -4,6 +4,7 @@ class EstadosController extends AppController {
 
 	var $name = 'Estados';
 	var $uses = array('CakePtbr.EstadoBrasileiro');
+	var $helpers = array('CakePtbr.Estados');
 
 	function index() {
 		$this->set('all', $this->EstadoBrasileiro->find('all'));
