@@ -1,3 +1,6 @@
 [submodule "plugins/cake_ptbr"]
 	path = plugins/cake_ptbr
 	url = git://github.com/jrbasso/cake_ptbr.git
+[submodule "plugins/localized"]
+	path = plugins/localized
+	url = git://github.com/cakephp/localized.git
