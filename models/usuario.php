@@ -7,7 +7,7 @@ class Usuario extends AppModel {
 		'CakePtbr.AjusteData'
 			=> array(
 				'data_nascimento',
-				'nome' /* Este campo ele vai mudar se for no formato de data, mesmo sendo string
+				'nome' // Este campo ele vai mudar se for no formato de data, mesmo sendo string
 			)
 	);
 
